@@ -8,12 +8,15 @@ import java.util.Set;
 
 @Entity
 public class Doctor extends User {
+
 @OneToMany(mappedBy = "doctor")
  @JsonIgnore
  private Set<Appointment> appointments;
+
  @OneToMany(mappedBy = "doctor")
  @JsonIgnore
  private Set<MedicalRecord> medicalRecords;
+ 
  private String specialty;
  private String availability;
  public Doctor() {

@@ -11,6 +11,7 @@ public class Patient extends User {
     // implement patient entity
     @OneToMany(mappedBy = "patient", cascade = CascadeType.ALL) 
     private Set<MedicalRecord> medicalRecords;
+    
     @OneToMany(mappedBy = "patient") 
     @JsonIgnore 
     private Set<Appointment> appointments;

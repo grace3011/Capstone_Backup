@@ -9,6 +9,7 @@ import java.util.List;
  
 @Repository
 public interface MedicalRecordRepository extends JpaRepository<MedicalRecord,Long>{
+    
     @Query("select m from MedicalRecord m where m.patient.id =:patientId")
     public List<MedicalRecord> getMedicalRecordsByPatientId(Long patientId);
 }

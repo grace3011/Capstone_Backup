@@ -10,7 +10,7 @@
                 <p class=" mb-5">Please enter your user and password!</p>
                 <div class="mb-3">
                   <label for="username" class="form-label ">Username</label>
-                  <input type="username" name ="username"formControlName="username" [(ngModel)]="formModel.username" class="form-control" id="username" placeholder="name@example.com">
+                  <input type="username" name ="username"formControlName="username" [(ngModel)]="formModel.username" class="form-control" id="username" placeholder="name">
                   <div *ngIf="itemForm.controls['username'].invalid && (itemForm.controls['username'].dirty || itemForm.controls['username'].touched)"
                   class="ng-dirty">
                   <span *ngIf="itemForm.controls['username'].errors">

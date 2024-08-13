@@ -69,3 +69,5 @@ public UserDetails loadUserByUsername(String username) throws UsernameNotFoundEx
 
 
 }
+// return new org.springframework.security.core.userdetails.User(...): 
+//This creates and returns a new User object from the Spring Security framework

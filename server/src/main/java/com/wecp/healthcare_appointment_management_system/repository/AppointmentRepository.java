@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 @Repository
 public interface AppointmentRepository extends JpaRepository<Appointment,Long> {
+    
     @Query("select a from Appointment a where a.patient.id =:patientId")
     public List<Appointment> getAppointmentsByPatientId(Long patientId);
 

@@ -25,6 +25,15 @@
         <li class="nav-item">
           <a class="nav-link" *ngIf="roleName === 'DOCTOR'" [routerLink]="['/doctor-availability']">Doctor Availability</a>
         </li>
+
+        
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="roleName === 'RECEPTIONIST'" [routerLink]="['/receptionist-appointments']">All Appointments</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" *ngIf="roleName === 'RECEPTIONIST'" [routerLink]="['/receptionist-schedule-appointments']">Schedule Appointments</a>
+        </li>
        
       </ul>
      

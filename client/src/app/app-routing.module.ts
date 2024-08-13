@@ -8,6 +8,8 @@ import { PatientAppointmentComponent } from './patient-appointment/patient-appoi
 import { ScheduleAppointmentComponent } from './schedule-appointment/schedule-appointment.component';
 import { DoctorAppointmentComponent } from './doctor-appointment/doctor-appointment.component';
 import { DoctorAvailabilityComponent } from './doctor-availability/doctor-availability.component';
+import { ReceptionistAppointmentsComponent } from './receptionist-appointments/receptionist-appointments.component';
+import { ReceptionistScheduleAppointmentsComponent } from './receptionist-schedule-appointments/receptionist-schedule-appointments.component';
 
 
 
@@ -20,10 +22,12 @@ const routes: Routes = [
   { path: 'schedule-appointment', component: ScheduleAppointmentComponent }, 
   { path: 'doctor-appointment', component: DoctorAppointmentComponent }, 
   { path: 'doctor-availability', component: DoctorAvailabilityComponent },
+  {path:  'receptionist-appointments', component:ReceptionistAppointmentsComponent },
+  {path: 'receptionist-schedule-appointments', component: ReceptionistScheduleAppointmentsComponent},
   
  
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: '**', redirectTo: '/dashboard', pathMatch: 'full' },
+   { path: '**', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 
 @NgModule({
