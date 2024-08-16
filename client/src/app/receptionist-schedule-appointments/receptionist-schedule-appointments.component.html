@@ -2,9 +2,9 @@
   {{ responseMessage }}
 </div>
 <div  class="card">
-    <div class="card-header">
+    <!-- <div class="card-header">
         <h4>Scheduled Appointment</h4>
-    </div>
+    </div> -->
         <div class="card-body">
             <form class="mb-3 mt-md-4" [formGroup]="itemForm" (ngSubmit)="onSubmit()">
               
@@ -27,6 +27,7 @@
                 </div>
               </div>
                 <div class="mb-3">
+                  <label for="time" class="form-label ">Appointment Time</label>
                   <input type="datetime-local" name ="time"formControlName="time" [(ngModel)]="formModel.time" class="form-control" id="time" placeholder="Appointment Time">
                   <div *ngIf="itemForm.controls['time'].invalid && (itemForm.controls['time'].dirty || itemForm.controls['time'].touched)"
                   class="ng-dirty">
@@ -37,8 +38,8 @@
                 </div>
                
 
-                <div class="col-md-2">
-                  <button class="btn btn-outline-dark" type="submit">Submit</button>
+                <div class="col-md-2 ">
+                  <button class="btn btn-success " type="submit">Submit</button>
                 </div>
               </form>
         </div>

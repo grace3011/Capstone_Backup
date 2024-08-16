@@ -1,14 +1,15 @@
-<div class="vh-100 d-flex justify-content-center align-items-center">
-    <div class="container">
-      <div class="row d-flex justify-content-center">
+
+<div class="vh-85 d-flex justify-content-center align-items-center">
+  <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
         <div class="col-12 col-md-8 col-lg-6">
-          <div class="border border-3 border-primary"></div>
-          <div class="card bg-white">
+          <!-- <div class="border border-3 border-primary"></div> -->
+          <div class="card-black ">
             <div class="card-body p-5">
   
-              <form class="mb-3 mt-md-4" [formGroup]="itemForm" (ngSubmit)="onRegister()">
-                <h2 class="fw-bold mb-2 text-uppercase text-center">Healthcare Appointment Management System</h2>
-                <p class="mb-5">Please enter your details here</p>
+              <form class="mb-4 mt-md-4" [formGroup]="itemForm" (ngSubmit)="onRegister()">
+                <h6 class="fw-bold mb-1 text-uppercase text-center">Healthcare Appointment Management System</h6>
+                <p class="mb-7 text-center">Please enter your details here</p>
                 
                 <div class="mb-3">
                   <label for="username" class="form-label">Username</label>
@@ -69,7 +70,7 @@
                 </div>
   
                 <div class="d-grid">
-                  <button class="btn btn-outline-dark" type="submit">Submit</button>
+                  <button class="btn btn-outline-success" type="submit">Submit</button>
                 </div>
               </form>
   
